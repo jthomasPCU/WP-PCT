@@ -1,0 +1,23 @@
+{
+  "name": "pcu-theme-travel",
+  "version": "1.0.0",
+  "description": "Point Comfort Travel - WP Custom Theme",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "dev": "wp-scripts build",
+    "devFast": "wp-scripts start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass css/style.scss build/index.css -w"
+  },
+  "keywords": [],
+  "author": "PCU",
+  "license": "ISC",
+  "dependencies": {
+    "@wordpress/scripts": "*",
+    "axios": "^1.3.4",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {}
+}

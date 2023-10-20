@@ -1,0 +1,1617 @@
+.start-your-quote {
+    h1 {
+        font-size: 46px;
+    }
+    h3 {
+        width: 100%;
+    }
+    button {
+        padding: 10px;
+        padding: 1rem;
+        background-color: #fff;
+        border-radius: 7rem;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 0 20px #424148;
+        transition: transform 0.2s ease-in-out;
+
+        &.zoom {
+            transform: scale(1.05);
+        }
+        
+        &:focus {
+            outline: none;
+        }
+        
+        span {
+            display: block;
+            border: 2px solid #0093c9;
+            border-radius: 7rem;
+            box-shadow: 0 0px 4px #79797e;
+        }
+        
+        svg {
+            height: 20px;
+            height: 2rem;
+            width: 20px;
+            width: 2rem;
+            margin: 50px;
+            margin: 5rem;
+            fill: #0093c9;
+            color: #0093c9;
+        }
+    }
+
+    .call-to-action {
+        font-weight: bold;
+    }
+    
+    .word {
+        position: absolute;
+        right: 0;
+        margin-right: -20px;
+
+        &-list {
+            position: relative;
+        }    
+    }
+    
+    .animationstart {
+        display: none;
+    }
+    
+    .fadein {
+        animation-name: fadein;
+        -webkit-animation-name: fadein;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-timing-function: ease-in-out;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+    
+    .fadeout {
+        animation-name: fadeout;
+        -webkit-animation-name: fadeout;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-timing-function: ease-in-out;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+    
+    .word {
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #fff;
+        color: #fff;
+
+        &.your {
+            -webkit-text-stroke-width: 0;
+            margin-right: -5px;
+        }
+        &.triptime {
+            color: #f89820 !important;
+        }
+        &.studenttime {
+            color: #70be4e;
+        }
+        &.grouptime {
+            color: #a770d7;
+        }
+        &.buildtime {
+            color: #e1251b;
+        }
+        &.marinetime {
+            color: #60d3c2;
+        }
+    
+    }
+    
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translate(0px, 60px);
+    }
+    100% {
+        opacity: 100;
+        transform: translate(0px, -5px);
+    }
+}
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translate(0px, 60px);
+    }
+    100% {
+        opacity: 100;
+        transform: translate(0px, -5px);
+    }
+}
+@-webkit-keyframes fadeout {
+    0% {
+        opacity: 100;
+        transform: translate(0px, -5px);
+    }
+    100% {
+        transform: translate(0px, -60px);
+        opacity: 0;
+    }
+}
+@keyframes fadeout {
+    0% {
+        opacity: 100;
+        transform: translate(0px, -5px);
+    }
+    100% {
+        transform: translate(0px, -60px);
+        opacity: 0;
+    }
+}
+
+
+// =====================
+
+
+
+#purchase-path-spinner .modal-content {
+    background: transparent;
+    border: none;
+}
+#purchase-path-message .modal-title,
+#purchase-path-message .message {
+    color: #191919;
+}
+#purchase-path-traveler-list select {
+    width: 100%;
+}
+#purchase-path-traveler-list select option {
+    font-size: 16px;
+    font-size: 1.6rem;
+    padding: 5px 8px;
+}
+#purchase-path-traveler-list select option span {
+    font-weight: 200;
+}
+#purchase-path-traveler-list .btn-primary {
+    font-weight: bold;
+}
+#purchase-path-traveler-list .error,
+#purchase-path-save-application .error {
+    margin-top: 10px;
+    margin-left: 8px;
+    font-weight: bold;
+    color: #e1251b;
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 18px;
+    line-height: 1.8rem;
+}
+.purchase-path-template header {
+    padding-top: 0;
+}
+.purchase-path-template header #topbar {
+    box-shadow: none;
+}
+.purchase-path-template header #producer-logo,
+.purchase-path-template header #producer-details {
+    display: none;
+}
+.purchase-path-template header #producer-logo {
+    max-height: 120px;
+    min-width: unset;
+    max-width: 100%;
+}
+.purchase-path-template header .producer-details p {
+    color: #79797e;
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 20px;
+    line-height: 2rem;
+}
+.purchase-path-template header .producer-details p a {
+    color: #79797e;
+}
+#purchase-path {
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 20px;
+    line-height: 2rem;
+}
+#purchase-path h1,
+#purchase-path h2,
+#purchase-path h3,
+#purchase-path h4,
+#purchase-path h5,
+#purchase-path h6 {
+    text-transform: unset;
+    font-weight: normal;
+}
+#purchase-path h1 {
+    font-size: 36px;
+    font-size: 3.6rem;
+    line-height: 42px;
+    line-height: 4.2rem;
+}
+#purchase-path h2 {
+    font-size: 32px;
+    font-size: 3.2rem;
+    line-height: 36px;
+    line-height: 3.6rem;
+}
+#purchase-path h3 {
+    font-size: 26px;
+    font-size: 2.6rem;
+    line-height: 30px;
+    line-height: 3rem;
+}
+#purchase-path h4 {
+    font-size: 2px;
+    font-size: 2rem;
+    line-height: 22px;
+    line-height: 2.2rem;
+}
+#purchase-path p {
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 18px;
+    line-height: 1.8rem;
+    font-weight: 200;
+}
+#purchase-path .error {
+    margin-top: 10px;
+    margin-left: 8px;
+    font-weight: bold;
+    color: #e1251b;
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 18px;
+    line-height: 1.8rem;
+}
+#purchase-path .singular-plan {
+    display: block;
+}
+#purchase-path .plan-type-custom {
+    display: block;
+}
+#purchase-path h3.select-plan-options {
+    margin-bottom: 5%;
+}
+#purchase-path .benefit-selection-box {
+    display: flex;
+    border-bottom: 1px solid;
+}
+#purchase-path .benefit-selection-box .selection-margin {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 100%;
+}
+#purchase-path .benefit-selection-box .selection-margin select {
+    background-color: #0093c9;
+    border-radius: 20px;
+    color: white;
+    width: 100%;
+    margin-top: 1.5%;
+    padding: 4px 20px;
+}
+#purchase-path .benefit-selection-box .selection-margin .switch-button {
+    background-color: white;
+}
+#purchase-path .indicators {
+    display: none;
+    position: relative;
+    z-index: 1;
+}
+#purchase-path .csv-section {
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 14px;
+    line-height: 1.4rem;
+}
+#purchase-path .csv-section .csv-upload {
+    border: 1px solid #e86956;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 0;
+    height: 36px;
+    width: 36px;
+    margin-left: -10px;
+    margin-left: -1rem;
+}
+#purchase-path .csv-section .csv-upload svg {
+    height: 14px;
+    width: 14px;
+    fill: #e86956;
+    margin: 0 3px 2px 4px;
+}
+#purchase-path .credit-card-types svg {
+    width: 40px;
+    height: 40px;
+    fill: #79797e;
+}
+#purchase-path .credit-card-types svg.active {
+    fill: #0093c9;
+}
+#purchase-path .purchase-path-indicators > .row {
+    box-shadow: 0 -10px 10px 0 rgba(0, 0, 0, 0.1);
+}
+#purchase-path .purchase-path-indicators > .row svg {
+    margin-top: -23px;
+}
+#purchase-path .purchase-path-indicators #step1-circle circle,
+#purchase-path .purchase-path-indicators #step2-circle circle,
+#purchase-path .purchase-path-indicators #step3-oval rect,
+#purchase-path .purchase-path-indicators #step4-circle circle,
+#purchase-path .purchase-path-indicators #step5-circle circle {
+    stroke: #fff;
+    transition: all 0.7s ease-in-out;
+}
+#purchase-path .purchase-path-indicators #step1-icon-hand {
+    fill: transparent;
+}
+#purchase-path .purchase-path-indicators #step2-icon-globe,
+#purchase-path .purchase-path-indicators #step3-quote-text tspan,
+#purchase-path .purchase-path-indicators #step4-icon-info,
+#purchase-path .purchase-path-indicators #step5-icon-checkout {
+    fill: #e9e9ee;
+    fill-opacity: 1;
+    transition: all 0.7s ease-in-out;
+}
+#purchase-path .purchase-path-indicators #step1-label,
+#purchase-path .purchase-path-indicators #step2-label,
+#purchase-path .purchase-path-indicators #step3-label,
+#purchase-path .purchase-path-indicators #step4-label,
+#purchase-path .purchase-path-indicators #step5-label {
+    fill: #79797e;
+    fill-opacity: 1;
+    font-size: 14px;
+    transition: all 0.7s ease-in-out;
+}
+#purchase-path .purchase-path-indicators #step1-icon-restart {
+    fill: #191919;
+}
+#purchase-path .purchase-path-indicators #step2-icon-completed,
+#purchase-path .purchase-path-indicators #step4-icon-completed {
+    fill: transparent;
+    transition: all 0.4s ease-in-out;
+}
+#purchase-path .purchase-path-indicators.current-step-1 #step1-label,
+#purchase-path .purchase-path-indicators.current-step-1 #step2-label {
+    fill: #191919;
+}
+#purchase-path .purchase-path-indicators.current-step-1 #step2-label tspan {
+    font-weight: bold;
+    font-size: 18px;
+}
+#purchase-path .purchase-path-indicators.current-step-1 #step2-circle circle {
+    stroke: #0093c9;
+}
+#purchase-path .purchase-path-indicators.current-step-1 #step2-icon-globe {
+    fill: #0093c9;
+}
+#purchase-path .purchase-path-indicators.current-step-2 #step3-label {
+    fill: #191919;
+}
+#purchase-path .purchase-path-indicators.current-step-2 #step3-label tspan {
+    font-weight: bold;
+    font-size: 18px;
+}
+#purchase-path .purchase-path-indicators.current-step-2 #step3-oval rect {
+    stroke: #0093c9;
+}
+#purchase-path .purchase-path-indicators.current-step-2 #step3-quote-text tspan {
+    fill: #0093c9;
+}
+#purchase-path .purchase-path-indicators.current-step-3 #step4-label {
+    fill: #191919;
+}
+#purchase-path .purchase-path-indicators.current-step-3 #step4-label tspan {
+    font-weight: bold;
+    font-size: 18px;
+}
+#purchase-path .purchase-path-indicators.current-step-3 #step4-circle circle {
+    stroke: #0093c9;
+}
+#purchase-path .purchase-path-indicators.current-step-3 #step4-icon-info {
+    fill: #0093c9;
+}
+#purchase-path .purchase-path-indicators.current-step-4 #step5-label {
+    fill: #191919;
+}
+#purchase-path .purchase-path-indicators.current-step-4 #step5-label tspan {
+    font-weight: bold;
+    font-size: 18px;
+}
+#purchase-path .purchase-path-indicators.current-step-4 #step5-circle circle {
+    stroke: #0093c9;
+}
+#purchase-path .purchase-path-indicators.current-step-4 #step5-icon-checkout {
+    fill: #0093c9;
+}
+#purchase-path .purchase-path-indicators.step-1-validates #step2-label,
+#purchase-path .purchase-path-indicators.step-1-validates #step2-icon-completed,
+#purchase-path .purchase-path-indicators.step-1-validates #step2-circle circle,
+#purchase-path .purchase-path-indicators.step-1-validates #step3-label,
+#purchase-path .purchase-path-indicators.step-1-validates #step3-oval rect,
+#purchase-path .purchase-path-indicators.step-1-validates #step3-quote-text tspan {
+    cursor: pointer;
+}
+#purchase-path .purchase-path-indicators.step-1-validates #step2-icon-globe {
+    fill: transparent;
+}
+#purchase-path .purchase-path-indicators.step-1-validates #step2-icon-completed {
+    fill: #70be4e;
+}
+#purchase-path .purchase-path-indicators.step-1-validates.current-step-1 #step2-circle circle {
+    stroke: #fff;
+}
+#purchase-path .purchase-path-indicators.step-2-validates #step4-label,
+#purchase-path .purchase-path-indicators.step-2-validates #step4-circle circle,
+#purchase-path .purchase-path-indicators.step-2-validates #step4-icon-completed {
+    cursor: pointer;
+}
+#purchase-path .purchase-path-indicators.step-2-validates.current-step-1 #step3-oval rect {
+    stroke: #fff;
+}
+#purchase-path .purchase-path-indicators.step-2-validates.current-step-1 #step3-quote-text tspan {
+    fill: #e9e9ee;
+}
+#purchase-path .purchase-path-indicators.step-2-validates.current-step-2 #step3-oval rect {
+    stroke: #0093c9;
+}
+#purchase-path .purchase-path-indicators.step-2-validates.current-step-2 #step3-quote-text tspan {
+    fill: #0093c9;
+}
+#purchase-path .purchase-path-indicators.step-2-validates.current-step-1.step-3-validates #step3-oval rect,
+#purchase-path .purchase-path-indicators.step-2-validates.current-step-2.step-3-validates #step3-oval rect,
+#purchase-path .purchase-path-indicators.step-2-validates.current-step-3 #step3-oval rect,
+#purchase-path .purchase-path-indicators.step-2-validates.current-step-4 #step3-oval rect {
+    stroke: #70be4e;
+}
+#purchase-path .purchase-path-indicators.step-2-validates.current-step-1.step-3-validates #step3-quote-text tspan,
+#purchase-path .purchase-path-indicators.step-2-validates.current-step-2.step-3-validates #step3-quote-text tspan,
+#purchase-path .purchase-path-indicators.step-2-validates.current-step-3 #step3-quote-text tspan,
+#purchase-path .purchase-path-indicators.step-2-validates.current-step-4 #step3-quote-text tspan {
+    fill: #70be4e;
+}
+#purchase-path .purchase-path-indicators.step-3-validates #step5-label,
+#purchase-path .purchase-path-indicators.step-3-validates #step5-circle circle,
+#purchase-path .purchase-path-indicators.step-3-validates #step5-icon-completed {
+    cursor: pointer;
+}
+#purchase-path .purchase-path-indicators.step-3-validates #step4-icon-info {
+    fill: transparent;
+}
+#purchase-path .purchase-path-indicators.step-3-validates #step4-circle circle {
+    stroke: #fff;
+}
+#purchase-path .purchase-path-indicators.step-3-validates #step4-icon-completed {
+    fill: #70be4e;
+}
+#purchase-path .overview {
+    display: none;
+}
+#purchase-path .overview .total {
+    color: #0093c9;
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+#purchase-path .overview .total .price {
+    font-size: 40px;
+    font-size: 4rem;
+    line-height: 48px;
+    line-height: 4.8rem;
+}
+#purchase-path .overview .overview-details::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+#purchase-path .overview .overview-details::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    background-color: #0093c9;
+    width: 6px;
+    height: 6px;
+}
+#purchase-path .overview .overview-details::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 6px;
+    height: 6px;
+    margin-left: 10px;
+}
+#purchase-path .overview .product-logo {
+    max-height: 80px;
+    max-width: 200px;
+}
+#purchase-path .overview-wrapper {
+    z-index: 9999;
+    background-color: #fff;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+}
+#purchase-path .overview-wrapper .overview .total {
+    font-weight: 200;
+}
+#purchase-path .step {
+    display: none;
+}
+#purchase-path .step .section {
+    padding: 20px 0;
+    padding: 2rem 0;
+}
+#purchase-path .step .section .fields .group {
+    padding-bottom: 20px;
+    padding-bottom: 2rem;
+}
+#purchase-path .step .section .fields .traveler-group {
+    border-bottom: 1px solid #e9e9ee;
+}
+#purchase-path .step .section .fields .traveler-group:last-of-type {
+    border-bottom: none;
+}
+#purchase-path .step .section .fields .traveler-group .traveler .existing-traveler {
+    margin-top: 30px;
+    margin-top: 3rem;
+}
+#purchase-path .step .section .fields .traveler-group .traveler .existing-traveler h5 {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+#purchase-path .step .section .fields .agreement {
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 16px;
+    line-height: 1.6rem;
+}
+#purchase-path .step .section .fields .agreement .invalid {
+    color: #e1251b;
+}
+#purchase-path .step .section .fields .plan select {
+    border-radius: 20px;
+    padding: 4px 20px;
+    height: unset;
+    margin-bottom: 4px;
+    border-color: #79797e;
+    background-color: #79797e;
+    color: #fff;
+}
+#purchase-path .step .section .fields .plan select option {
+    background-color: #79797e;
+}
+#purchase-path .step .section .fields .plan select[disabled] {
+    // -webkit-appearance: none;
+    // -moz-appearance: none;
+    background-color: #79797e;
+}
+#purchase-path .step .section .fields .plan select[disabled] option {
+    background-color: #79797e;
+}
+#purchase-path .step .section .fields .plan .benefits {
+    margin: 12px 0;
+    margin: 1.2rem 0;
+}
+#purchase-path .step .section .fields .plan .benefits .switch-button {
+    background-color: #fff;
+}
+#purchase-path .step .section .fields .plan .benefits .switch-button .button {
+    border-color: #fff;
+    background-color: var(--color);
+}
+#purchase-path .step .section .fields .plan .plan-details {
+    display: none;
+}
+#purchase-path .step .section .fields .plan .plan-details a {
+    color: #79797e;
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 28px;
+    font-weight: bold;
+}
+#purchase-path .step .section .fields .plan .plan-totals {
+    margin-top: 3px;
+    border: 1px solid #191919;
+    color: #191919;
+    border-radius: 30px;
+    border-radius: 3rem;
+    padding: 10px;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+#purchase-path .step .section .fields .plan .plan-totals .daily {
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 20px;
+    line-height: 2rem;
+}
+#purchase-path .step .section .fields .plan .plan-totals .trip {
+    font-size: 12px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 14px;
+    line-height: 1.4rem;
+}
+#purchase-path .step .section .fields .plan .plan-totals .trip.yearly {
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 22px;
+    line-height: 2rem;
+}
+#purchase-path .step .section .fields .plan.selected select {
+    border-color: #191919;
+    background-color: #fff;
+    color: #191919;
+}
+#purchase-path .step .section .fields .plan.selected select option {
+    background-color: #fff;
+}
+#purchase-path .step .section .fields .plan.selected .plan-totals {
+    margin-top: 0;
+    border: 4px solid #0093c9;
+    color: #0093c9;
+    background-color: #fff;
+}
+#purchase-path .step .section .fields .plan.selected .benefits .switch-button {
+    background-color: #fff;
+}
+#purchase-path .step .section .fields .plan.selected .benefits .switch-button .button {
+    border-color: #fff;
+}
+#purchase-path .step .section .fields .plan.selected .benefits .switch-button.enabled {
+    border-color: #0093c9;
+}
+#purchase-path .step .section .fields .plan.selected .benefits .switch-button.enabled .button {
+    background-color: #0093c9;
+}
+#purchase-path .step .section .fields label {
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 16px;
+    line-height: 1.6rem;
+    margin-top: 10px;
+    margin-top: 1rem;
+}
+#purchase-path .step .section .fields label.travel-includes-us-yes-note {
+    font-size: 1.2rem !important;
+    margin-top: 0rem !important;
+}
+#purchase-path .step .section .fields select,
+#purchase-path .step .section .fields input[type="date"],
+#purchase-path .step .section .fields input[type="text"],
+#purchase-path .step .section .fields input[type="email"],
+#purchase-path .step .section .fields input[type="password"] {
+    border: 1px solid #1ba3d4;
+    border-radius: 8px;
+    padding: 5px 10px;
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 32px;
+    line-height: 3.2rem;
+}
+#purchase-path .step .section .fields select:focus,
+#purchase-path .step .section .fields input[type="date"]:focus,
+#purchase-path .step .section .fields input[type="text"]:focus,
+#purchase-path .step .section .fields input[type="email"]:focus,
+#purchase-path .step .section .fields input[type="password"]:focus {
+    outline: none;
+    box-shadow: 0px 0px 2px #e86956;
+}
+#purchase-path .step .section .fields select.invalid,
+#purchase-path .step .section .fields input[type="date"].invalid,
+#purchase-path .step .section .fields input[type="text"].invalid,
+#purchase-path .step .section .fields input[type="email"].invalid,
+#purchase-path .step .section .fields input[type="password"].invalid {
+    border-color: #e1251b;
+}
+#purchase-path .step .section .fields select:disabled,
+#purchase-path .step .section .fields input[type="date"]:disabled,
+#purchase-path .step .section .fields input[type="text"]:disabled,
+#purchase-path .step .section .fields input[type="email"]:disabled,
+#purchase-path .step .section .fields input[type="password"]:disabled {
+    cursor: not-allowed;
+    background-color: #e9e9ee;
+}
+#purchase-path .step .section .fields select {
+    height: 44px;
+    height: 4.4rem;
+}
+#purchase-path .step .section .fields select,
+#purchase-path .step .section .fields input[type="date"],
+#purchase-path .step .section .fields input[type="text"],
+#purchase-path .step .section .fields input[type="email"],
+#purchase-path .step .section .fields input[type="password"],
+#purchase-path .step .section .fields textarea,
+#purchase-path .step .section .fields .vdp-datepicker {
+    width: 100%;
+}
+#purchase-path .step .section .fields .application-for-insurance {
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 18px;
+    line-height: 1.8rem;
+    height: 200px;
+    overflow-y: scroll;
+    border: 1px solid #79797e;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+#purchase-path .step .section .fields .vdp-datepicker {
+    display: inline-block;
+}
+#purchase-path .step .section .fields .vdp-datepicker .vdp-datepicker__calendar {
+    left: 50%;
+    margin-left: -150px;
+}
+#purchase-path .step .section .fields .vdp-datepicker .vdp-datepicker__calendar header {
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 36px;
+    line-height: 3.6rem;
+}
+#purchase-path .step .section .fields .vdp-datepicker .vdp-datepicker__calendar .day-header {
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+#purchase-path .step .section .fields .vdp-datepicker .vdp-datepicker__calendar .day,
+#purchase-path .step .section .fields .vdp-datepicker .vdp-datepicker__calendar .month,
+#purchase-path .step .section .fields .vdp-datepicker .vdp-datepicker__calendar .year {
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-weight: 200;
+}
+#purchase-path .step .section .fields .vdp-datepicker input:disabled {
+    cursor: not-allowed;
+    background-color: #e9e9ee;
+}
+#purchase-path .step .section .fields .vdp-datepicker.invalid input {
+    border-color: #e1251b;
+}
+#purchase-path .step .plan-total {
+    margin: 22px 0;
+    margin: 2.2rem 0;
+    font-weight: 300;
+    font-size: 30px;
+    font-size: 3rem;
+    line-height: 38px;
+    line-height: 3.8rem;
+    color: #0093c9;
+    padding: 12px 48px;
+    padding: 1.2rem 4.8rem;
+    border: 1px solid #0093c9;
+    border-radius: 36px;
+    border-radius: 3.6rem;
+}
+#purchase-path .step .switch-plan-description {
+    font-size: 10px;
+    font-size: 1rem;
+    line-height: 16px;
+    line-height: 1.6rem;
+    display: inline-block;
+}
+#purchase-path .step button.switch-plan-types-custom {
+    border: 0;
+    width: 100%;
+    background: none;
+    padding: 0;
+}
+#purchase-path .step button.switch-plan-types {
+    border: 1px solid #191919;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #191919;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    padding: 0.4rem 1.8rem;
+}
+#purchase-path .step button.switch-plan-types img {
+    height: 20px;
+}
+#purchase-path .step button.switch-plan-types svg {
+    width: 14px;
+    height: 14px;
+    margin: 0 5px 0 0;
+}
+#purchase-path .step button.switch-plan-types.blue-border {
+    border: 2px solid #0093c9;
+    width: 100%;
+}
+#purchase-path .step button.remove-traveler {
+    margin-top: 1.2rem;
+    border: 1px solid #424148;
+    background-color: #79797e;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    border-radius: 15px;
+    padding: 0.7rem 1.4rem;
+}
+#purchase-path .step button.remove-traveler svg {
+    height: 12px;
+    width: 12px;
+    fill: #fff;
+    margin: 0 0.8rem 0 0;
+}
+#purchase-path .step button.add-traveler,
+#purchase-path .step button.add-traveler-group {
+    margin-top: 1.2rem;
+    border: 1px solid #424148;
+    background-color: #e86956;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    border-radius: 15px;
+    padding: 0.7rem 1.4rem;
+}
+#purchase-path .step .hint {
+    font-size: 1.4rem;
+    line-height: 18px;
+    font-size: 1.8rem;
+    padding: 1rem 0;
+}
+#purchase-path .controls span {
+    padding-left: 20px;
+    font-size: 12px;
+    line-height: 16px;
+}
+#purchase-path button {
+    cursor: pointer;
+}
+#purchase-path button:focus {
+    outline: none;
+}
+#purchase-path button.save-application {
+    border: 1px solid #191919;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #191919;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    padding: 0.4rem 1.8rem;
+}
+#purchase-path button.save-application svg {
+    width: 14px;
+    height: 14px;
+    margin: 0 5px 0 0;
+}
+#purchase-path button.previous-step,
+#purchase-path button.next-step,
+#purchase-path button.checkout {
+    margin: 0 0.4rem;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 14px;
+    padding: 1.4rem 2.4rem;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    max-height: 45px;
+}
+#purchase-path button.previous-step {
+    background-color: #fff;
+    color: #0093c9;
+    border: 1px solid #1ba3d4;
+}
+#purchase-path button.checkout,
+#purchase-path button.next-step {
+    background-color: #e86956;
+    color: #fff;
+    border: none;
+}
+#purchase-path .overview .detail,
+#purchase-path .section .detail {
+    padding: 5px 10px;
+    margin: 0 0.2rem 0.8rem;
+    border-radius: 20px;
+    border: 1px solid #191919;
+    display: inline-block;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+#purchase-path .payment-pp-wrapper {
+    display: inline-block;
+    margin-right: 60px;
+    margin-left: 10px;
+    width: 300px;
+}
+#purchase-path .hints {
+    width: 100%;
+}
+#purchase-path .hints .hint p {
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 18px;
+    line-height: 1.8rem;
+    font-weight: bold;
+}
+#purchase-path .hints .hint .icon {
+    padding: 2px 5px 4px;
+    display: inline-block;
+    border-radius: 20px;
+    border: 1px solid #0093c9;
+}
+#purchase-path .hints .hint .icon svg {
+    height: 12px;
+    width: 12px;
+    fill: #0093c9;
+}
+.trip-rates {
+    font-weight: 200;
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+.trip-rates .title {
+    font-weight: bold;
+}
+.trip-rates .total {
+    font-size: 24px;
+    font-size: 2.4rem;
+}
+.trip-rates .total .price {
+    color: #0093c9;
+    font-weight: 300;
+}
+.plan-selector {
+    display: inline-block;
+    border: 1px solid #191919;
+    border-radius: 12px;
+    width: 24px;
+    width: 2.4rem;
+    height: 24px;
+    height: 2.4rem;
+    cursor: pointer;
+    background-color: #fff;
+}
+.plan-selector.selected {
+    background-color: #0093c9;
+}
+.plan-selector svg {
+    fill: #fff;
+    height: 15px;
+    width: 15px;
+    display: block;
+    margin: 4px auto 0;
+}
+.switch-button-control {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 12px;
+    margin-bottom: 1.2rem;
+}
+.switch-button-control .switch-button {
+    height: 1.8rem;
+    width: calc(1.8rem * 2);
+    min-width: calc(1.8rem * 2);
+    border: 1px solid var(--color);
+    box-shadow: inset 0px 0px 1px 0px rgba(0, 0, 0, 0.33);
+    border-radius: 1.8rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.switch-button-control .switch-button .button {
+    height: calc(1.8rem - (2 * 1px));
+    width: calc(1.8rem - (2 * 1px));
+    border: 1px solid var(--color);
+    border-radius: calc(1.8rem - (2 * 1px));
+    background: var(--color);
+    transition: all 0.3s ease-in-out;
+}
+.switch-button-control .switch-button .button svg {
+    height: 9px;
+    width: 9px;
+    fill: #fff;
+    margin: -10px 0 0 3px;
+    padding: 0;
+}
+.switch-button-control .switch-button.enabled {
+    background-color: var(--color);
+    box-shadow: none;
+}
+.switch-button-control .switch-button.enabled .button {
+    background: white;
+    transform: translateX(calc(calc(1.8rem - (2 * 1px)) + (2 * 1px)));
+}
+.switch-button-control .switch-button-label {
+    margin-left: 10px;
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 20px;
+    line-height: 2rem;
+    cursor: pointer;
+}
+.switch-button-control .switch-button-label span {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 18px;
+    line-height: 1.8rem;
+}
+@media (min-width: 992px) {
+    #purchase-path {
+        font-size: 18px;
+        font-size: 1.8rem;
+        line-height: 22px;
+        line-height: 2.2rem;
+    }
+    #purchase-path h1 {
+        font-size: 60px;
+        font-size: 6rem;
+        line-height: 70px;
+        line-height: 7rem;
+    }
+    #purchase-path h2 {
+        font-size: 50px;
+        font-size: 5rem;
+        line-height: 60px;
+        line-height: 6rem;
+    }
+    #purchase-path h3 {
+        font-size: 36px;
+        font-size: 3.6rem;
+        line-height: 40px;
+        line-height: 4rem;
+    }
+    #purchase-path h4 {
+        font-size: 30px;
+        font-size: 3rem;
+        line-height: 36px;
+        line-height: 3.6rem;
+    }
+    #purchase-path p {
+        font-size: 16px;
+        font-size: 1.6rem;
+        line-height: 19px;
+        line-height: 1.9rem;
+        font-weight: 200;
+    }
+    #purchase-path .step button.switch-plan-types img {
+        height: 30px;
+    }
+    #purchase-path .step .plan-total {
+        font-size: 42px;
+        font-size: 4.2rem;
+        line-height: 48px;
+        line-height: 4.8rem;
+    }
+}
+.slider-slide {
+    padding: 40px 0;
+    padding: 4rem 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.slider-slide .title {
+    margin-bottom: 10px;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+.slider-slide .subtitle {
+    font-weight: 200;
+    margin-bottom: 40px;
+    margin-bottom: 4rem;
+}
+.slider-slide .content {
+    font-size: 20px;
+    font-size: 2rem;
+}
+.slider-slide .button {
+    display: inline-block;
+    border-radius: 27px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 12px;
+    line-height: 1.2rem;
+    padding: 20px 30px 20px 45px;
+    padding: 2rem 3rem 2rem 4.5rem;
+    margin-bottom: 30px;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+.slider-slide .button .left-icon,
+.slider-slide .button .right-icon {
+    height: 14px;
+    height: 1.4rem;
+    width: 14px;
+    width: 1.4rem;
+    fill: #fff;
+}
+.slider-slide .button .left-icon {
+    margin-right: 9px;
+    margin-right: 0.9rem;
+}
+.slider-slide .button .right-icon {
+    margin-left: 9px;
+    margin-left: 0.9rem;
+}
+.slider-slide .button:active,
+.slider-slide .button:link,
+.slider-slide .button:hover {
+    text-decoration: none;
+}
+.slider-slide .button.transparent {
+    background-color: transparent;
+}
+.slider-slide .button.blue {
+    background-color: rgba(0, 153, 204, 0.7);
+}
+.slider-slide p {
+    color: #fff;
+}
+@media (min-width: 768px) {
+    .slider-slide {
+        padding: 80px 0;
+        padding: 8rem 0;
+    }
+    .slider-slide .title {
+        margin-bottom: 10px;
+        margin-bottom: 1rem;
+    }
+    .slider-slide .subtitle {
+        margin-bottom: 80px;
+        margin-bottom: 8rem;
+    }
+    .slider-slide .button {
+        width: auto;
+        font-size: 16px;
+        font-size: 1.6rem;
+        line-height: 18px;
+        line-height: 1.8rem;
+    }
+}
+@media (min-width: 992px) {
+    .slider-slide .button {
+        padding: 20px 50px 20px 65px;
+        padding: 2rem 5rem 2rem 6.5rem;
+        font-size: 18px;
+        font-size: 1.8rem;
+        line-height: 20px;
+        line-height: 2rem;
+    }
+}
+
+
+
+
+
+.start-your-quote h1 {
+    font-size: 46px;
+}
+.start-your-quote h3 {
+    width: 100%;
+}
+.start-your-quote button {
+    padding: 10px;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 7rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 20px #424148;
+    transition: transform 0.2s ease-in-out;
+}
+.start-your-quote button.zoom {
+    transform: scale(1.05);
+}
+.start-your-quote button:focus {
+    outline: none;
+}
+.start-your-quote button span {
+    display: block;
+    border: 2px solid #0093c9;
+    border-radius: 7rem;
+    box-shadow: 0 0px 4px #79797e;
+}
+.start-your-quote button svg {
+    height: 20px;
+    height: 2rem;
+    width: 20px;
+    width: 2rem;
+    margin: 50px;
+    margin: 5rem;
+    fill: #0093c9;
+    color: #0093c9;
+}
+.start-your-quote .call-to-action {
+    font-weight: bold;
+}
+.start-your-quote .word {
+    position: absolute;
+    right: 0;
+    margin-right: -20px;
+}
+.start-your-quote .word-list {
+    position: relative;
+}
+.start-your-quote .animationstart {
+    display: none;
+}
+.start-your-quote .fadein {
+    animation-name: fadein;
+    -webkit-animation-name: fadein;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.start-your-quote .fadeout {
+    animation-name: fadeout;
+    -webkit-animation-name: fadeout;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.start-your-quote .word {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    color: #fff;
+}
+.start-your-quote .word.your {
+    -webkit-text-stroke-width: 0;
+    margin-right: -5px;
+}
+.start-your-quote .word.triptime {
+    color: #f89820 !important;
+}
+.start-your-quote .word.studenttime {
+    color: #70be4e;
+}
+.start-your-quote .word.grouptime {
+    color: #a770d7;
+}
+.start-your-quote .word.buildtime {
+    color: #e1251b;
+}
+.start-your-quote .word.marinetime {
+    color: #60d3c2;
+}
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translate(0px, 60px);
+    }
+    100% {
+        opacity: 100;
+        transform: translate(0px, -5px);
+    }
+}
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translate(0px, 60px);
+    }
+    100% {
+        opacity: 100;
+        transform: translate(0px, -5px);
+    }
+}
+@-webkit-keyframes fadeout {
+    0% {
+        opacity: 100;
+        transform: translate(0px, -5px);
+    }
+    100% {
+        transform: translate(0px, -60px);
+        opacity: 0;
+    }
+}
+@keyframes fadeout {
+    0% {
+        opacity: 100;
+        transform: translate(0px, -5px);
+    }
+    100% {
+        transform: translate(0px, -60px);
+        opacity: 0;
+    }
+}
+#purchase-path {
+    position: relative;
+    display: none;
+}
+#purchase-path .quote-engine-indicators {
+    margin-bottom: -95px;
+}
+#purchase-path .quote-engine-indicators #step1-circle circle,
+#purchase-path .quote-engine-indicators #step2-circle circle,
+#purchase-path .quote-engine-indicators #step3-circle circle,
+#purchase-path .quote-engine-indicators #step4-oval rect,
+#purchase-path .quote-engine-indicators #step5-circle circle {
+    stroke: #fff;
+    transition: all 0.7s ease-in-out;
+}
+#purchase-path .quote-engine-indicators #step1-icon-hand,
+#purchase-path .quote-engine-indicators #step2-icon-globe,
+#purchase-path .quote-engine-indicators #step3-icon-user,
+#purchase-path .quote-engine-indicators #step4-quote-text tspan,
+#purchase-path .quote-engine-indicators #step5-icon-checkout {
+    fill: #e9e9ee;
+    fill-opacity: 1;
+    transition: all 0.7s ease-in-out;
+}
+#purchase-path .quote-engine-indicators #step1-label,
+#purchase-path .quote-engine-indicators #step2-label,
+#purchase-path .quote-engine-indicators #step3-label,
+#purchase-path .quote-engine-indicators #step4-label,
+#purchase-path .quote-engine-indicators #step5-label {
+    fill: #e9e9ee;
+    fill-opacity: 1;
+    font-size: 14px;
+    transition: all 0.7s ease-in-out;
+}
+#purchase-path .quote-engine-indicators #step1-icon-restart,
+#purchase-path .quote-engine-indicators #step2-icon-complete,
+#purchase-path .quote-engine-indicators #step3-icon-completed {
+    fill: transparent;
+    transition: all 0.4s ease-in-out;
+}
+#purchase-path .quote-engine-indicators.current-step-1 #step1-label {
+    fill: #fff;
+}
+#purchase-path .quote-engine-indicators.current-step-1 #step1-label tspan {
+    font-weight: bold;
+    font-size: 18px;
+}
+#purchase-path .quote-engine-indicators.current-step-1 #step1-circle circle {
+    stroke: #0093c9;
+}
+#purchase-path .quote-engine-indicators.current-step-1 #step1-icon-hand {
+    fill: #0093c9;
+}
+#purchase-path .quote-engine-indicators.current-step-2 #step2-label {
+    fill: #fff;
+}
+#purchase-path .quote-engine-indicators.current-step-2 #step2-label tspan {
+    font-weight: bold;
+    font-size: 18px;
+}
+#purchase-path .quote-engine-indicators.current-step-2 #step2-circle circle {
+    stroke: #0093c9;
+}
+#purchase-path .quote-engine-indicators.current-step-2 #step2-icon-globe {
+    fill: #0093c9;
+}
+#purchase-path .quote-engine-indicators.current-step-3 #step3-label {
+    fill: #fff;
+}
+#purchase-path .quote-engine-indicators.current-step-3 #step3-label tspan {
+    font-weight: bold;
+    font-size: 18px;
+}
+#purchase-path .quote-engine-indicators.current-step-3 #step3-circle circle {
+    stroke: #0093c9;
+}
+#purchase-path .quote-engine-indicators.current-step-3 #step3-icon-user {
+    fill: #0093c9;
+}
+#purchase-path .quote-engine-indicators.current-step-4 #step4-label {
+    fill: #fff;
+}
+#purchase-path .quote-engine-indicators.current-step-4 #step4-label tspan {
+    font-weight: bold;
+    font-size: 18px;
+}
+#purchase-path .quote-engine-indicators.current-step-4 #step4-oval rect {
+    stroke: #0093c9;
+}
+#purchase-path .quote-engine-indicators.current-step-4 #step4-quote-text tspan {
+    fill: #0093c9;
+}
+#purchase-path .quote-engine-indicators.step-1-validates #step1-label,
+#purchase-path .quote-engine-indicators.step-1-validates #step1-icon-restart,
+#purchase-path .quote-engine-indicators.step-1-validates #step1-circle circle,
+#purchase-path .quote-engine-indicators.step-1-validates #step2-label,
+#purchase-path .quote-engine-indicators.step-1-validates #step2-icon-complete,
+#purchase-path .quote-engine-indicators.step-1-validates #step2-circle circle {
+    cursor: pointer;
+}
+#purchase-path .quote-engine-indicators.step-1-validates #step1-label {
+    fill: #fff;
+}
+#purchase-path .quote-engine-indicators.step-1-validates #step1-label tspan {
+    font-weight: bold;
+    font-size: 18px;
+}
+#purchase-path .quote-engine-indicators.step-1-validates #step1-icon-hand {
+    fill: #0093c9;
+}
+#purchase-path .quote-engine-indicators.step-1-validates #step1-circle circle {
+    stroke: #0093c9;
+}
+#purchase-path .quote-engine-indicators.step-1-validates.current-step-2 #step1-label,
+#purchase-path .quote-engine-indicators.step-1-validates.step-2-validates #step1-label {
+    fill: #e9e9ee;
+}
+#purchase-path .quote-engine-indicators.step-1-validates.current-step-2 #step1-label tspan,
+#purchase-path .quote-engine-indicators.step-1-validates.step-2-validates #step1-label tspan {
+    font-weight: normal;
+    font-size: 14px;
+}
+#purchase-path .quote-engine-indicators.step-1-validates.current-step-2 #step1-icon-hand,
+#purchase-path .quote-engine-indicators.step-1-validates.step-2-validates #step1-icon-hand {
+    fill: transparent;
+}
+#purchase-path .quote-engine-indicators.step-1-validates.current-step-2 #step1-icon-restart,
+#purchase-path .quote-engine-indicators.step-1-validates.step-2-validates #step1-icon-restart {
+    fill: #191919;
+}
+#purchase-path .quote-engine-indicators.step-1-validates.current-step-2 #step1-circle circle,
+#purchase-path .quote-engine-indicators.step-1-validates.step-2-validates #step1-circle circle {
+    stroke: #fff;
+}
+#purchase-path .quote-engine-indicators.step-1-validates.current-step-1 #step1-label {
+    fill: #fff;
+}
+#purchase-path .quote-engine-indicators.step-1-validates.current-step-1 #step1-label tspan {
+    font-weight: bold;
+    font-size: 18px;
+}
+#purchase-path .quote-engine-indicators.step-2-validates #step3-label,
+#purchase-path .quote-engine-indicators.step-2-validates #step3-icon-completed,
+#purchase-path .quote-engine-indicators.step-2-validates #step3-circle circle {
+    cursor: pointer;
+}
+#purchase-path .quote-engine-indicators.step-2-validates #step2-icon-globe {
+    fill: transparent;
+}
+#purchase-path .quote-engine-indicators.step-2-validates #step2-icon-complete {
+    fill: #70be4e;
+}
+#purchase-path .quote-engine-indicators.step-2-validates.current-step-2 #step2-circle circle {
+    stroke: #fff;
+}
+#purchase-path .quote-engine-indicators.step-3-validates #step4-label,
+#purchase-path .quote-engine-indicators.step-3-validates #step4-oval rect,
+#purchase-path .quote-engine-indicators.step-3-validates #step4-quote-text tspan {
+    cursor: pointer;
+}
+#purchase-path .quote-engine-indicators.step-3-validates #step3-circle circle {
+    stroke: #fff;
+}
+#purchase-path .quote-engine-indicators.step-3-validates #step3-icon-user {
+    fill: transparent;
+}
+#purchase-path .quote-engine-indicators.step-3-validates #step3-icon-completed {
+    fill: #70be4e;
+}
+#purchase-path .quote-engine {
+    position: relative;
+}
+#purchase-path .quote-engine p {
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 16px;
+    line-height: 1.6rem;
+    font-weight: normal;
+}
+#purchase-path .quote-engine .opacity {
+    position: absolute;
+    top: 0;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    opacity: 0.6;
+    border-radius: 7rem;
+}
+#purchase-path .quote-engine .blue {
+    position: relative;
+    background-color: #0093c9;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 70px;
+    border-bottom-left-radius: 7rem;
+    border-bottom-right-radius: 70px;
+    border-bottom-right-radius: 7rem;
+    min-height: 100px;
+}
+#purchase-path .quote-engine .step .section .plan .benefits .switch-button.enabled .button {
+    background-color: #155064;
+}
+#purchase-path .quote-engine .step .section .plan.selected .benefits .switch-button.enabled .button {
+    background-color: #0093c9;
+}
+#purchase-path .quote-engine .step .section .plan .plan-totals {
+    color: #fff;
+    border-color: #fff;
+}
+#purchase-path .quote-engine .step .section .vdp-datepicker {
+    color: #191919;
+}
+#purchase-path .quote-engine .step .section .vdp-datepicker .disabled {
+    color: #e9e9ee;
+}
+#purchase-path .quote-engine .controls,
+#purchase-path .quote-engine .previous-step,
+#purchase-path .quote-engine .checkout {
+    display: none;
+}
+#purchase-path .quote-engine .controls {
+    position: absolute;
+    bottom: -14px;
+    left: 0;
+    right: 0;
+}
+#purchase-path .quote-engine #checkout-form {
+    display: inline;
+}
+#purchase-path .quote-engine .hints .hint .icon {
+    padding: 0px 5px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+    width: 20px;
+    width: 2rem;
+    height: 20px;
+    height: 2rem;
+}
+#purchase-path .quote-engine .hints .hint .icon svg {
+    height: 10px;
+    width: 10px;
+    fill: #0093c9;
+}
+#purchase-path .step button.remove-traveler svg {
+    margin: 0;
+}
+
+// Modal
+.modal-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+}
+.modal-header .close {
+    padding: 1rem 1rem;
+    margin: -1rem -1rem -1rem auto;
+}
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem;
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    outline: 0;
+}
+
+.modal-footer {
+    justify-content: flex-start;
+
+    * {
+        margin: .25rem;
+    }
+
+}

@@ -1,0 +1,139 @@
+.contact-banner {
+    .bgimage,
+    .bgimage {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .bgimage {
+        min-height: 300px;
+    }
+    
+    &.box-inset {
+        box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.4), inset 0 -7px 9px -7px rgba(0, 0, 0, 0.4);
+    }
+    
+    &.box-inset-bottom {
+        box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.4), inset 0 -7px 9px -7px transparent;
+    }
+
+    &.box-inset-top {
+        box-shadow: inset 0 7px 9px -7px transparent, inset 0 -7px 9px -7px rgba(0, 0, 0, 0.4);
+    }
+
+    &.box-outset {
+        box-shadow: 0 7px 9px -7px rgba(0, 0, 0, 0.4), 0 -7px 9px -7px rgba(0, 0, 0, 0.4);
+    }
+
+    &.box-outset-bottom {
+        box-shadow: 0 7px 9px -7px rgba(0, 0, 0, 0.4), 0 -7px 9px -7px transparent;
+    }
+
+    &.box-outset-top {
+        box-shadow: 0 7px 9px -7px transparent, 0 -7px 9px -7px rgba(0, 0, 0, 0.4);
+    }
+    
+    .col-no-padding {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    
+    .col-exta-padding {
+        padding: 25px;
+    }
+
+    .col-white-opac {
+        background: rgba(255, 255, 255, 0.5);
+        color: #191919;
+    }
+
+    .col-white-opac a {
+        color: #191919;
+    }
+    
+    .col-white-opac svg {
+        fill: #191919;
+    }
+    
+    .col-black-opac {
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+    }
+    
+    .col-black-opac a {
+        color: #fff;
+    }
+    
+    .col-black-opac svg {
+        fill: #fff;
+    }
+    
+    .col-black {
+        background: #000;
+        color: #fff;
+    }
+    
+    .col-black a {
+        color: #fff;
+    }
+    
+    .col-black svg {
+        fill: #fff;
+    }
+    
+    .col-white {
+        background: #fff;
+        color: #191919;
+    }
+    
+    .col-white a {
+        color: #191919;
+    }
+    
+    .col-white svg {
+        fill: #191919;
+    }
+    
+    .content-area {     
+        .title, 
+        .subtitle,
+        a {
+            font-size: 30px;
+            font-size: 3rem;
+            line-height: 35px;
+            line-height: 3.5rem;
+        }
+        
+        .title {
+            font-weight: bold;
+        }
+        
+        .subtitle {
+            font-weight: 200;
+        }
+        
+        a {
+            display: block;
+            font-weight: 200;
+        
+            &:link,
+            &:active,
+            &:hover {
+                text-decoration: none;
+            }
+            
+            img {
+                margin-top: -2px;
+                margin-right: 20px;
+            }
+        }
+        
+        .footnote {
+            font-size: 20px;
+            font-size: 2rem;
+            font-weight: bold;
+            line-height: 24px;
+            line-height: 2.4rem;
+        }
+    }
+}

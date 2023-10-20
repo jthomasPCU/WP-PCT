@@ -1,0 +1,293 @@
+.glossary-widget h1.title {
+    font-weight: 200;
+}
+.glossary-widget button {
+    background: transparent;
+    border: 1px solid #191919;
+    border-radius: 20px;
+    padding: 0.5rem 1.5rem;
+    margin: 0.5rem;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    cursor: pointer;
+}
+.glossary-widget button:focus {
+    outline: none;
+}
+.glossary-widget .glossary-search,
+.glossary-widget .first-letters-container,
+.glossary-widget .entries-container {
+    display: none;
+}
+.glossary-widget .glossary-search input {
+    border: 1px solid #191919;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    padding: 0.5rem 1.5rem;
+    width: 100%;
+}
+.glossary-widget .glossary-search input:focus {
+    outline: none;
+}
+.glossary-widget .first-letters {
+    border-top: 1px solid #191919;
+    border-bottom: 1px solid #191919;
+    padding: 1.5rem;
+    text-align: center;
+}
+.glossary-widget .first-letters button {
+    border: none;
+    padding: 4px;
+    margin: 2px 5px;
+}
+.glossary-widget .first-letters button.selected {
+    font-weight: bold;
+}
+.glossary-widget .entries-container .first-letter {
+    margin-bottom: 1rem;
+    padding: 0.5rem 2rem;
+    background-color: #e9e9ee;
+}
+.glossary-widget .entries-container .entries .entry {
+    list-style: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: color 0.8 ease-in-out;
+}
+.glossary-widget .entries-container .entries .entry span {
+    border-radius: 20px;
+    background-color: #424148;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    transition: transform 0.25s ease-in-out;
+}
+.glossary-widget .entries-container .entries .entry .definition {
+    display: none;
+    border: 1px solid #79797e;
+    border-radius: 1rem;
+    font-weight: 200;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    padding: 20px;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    transition: height 1.8s ease-in-out;
+    height: 0;
+}
+.glossary-widget .entries-container .entries .entry .selected {
+    color: #0093c9;
+}
+.glossary-widget .entries-container .entries .entry .selected span {
+    background-color: #0093c9;
+    transform: rotate(45deg);
+}
+.glossary-widget .entries-container .entries .entry .selected .definition {
+    display: block;
+    height: auto;
+}
+
+.faq-widget h1.title {
+    font-weight: 200;
+}
+.faq-widget button {
+    background: transparent;
+    border: 1px solid #191919;
+    border-radius: 20px;
+    padding: 0.5rem 1.5rem;
+    margin: 0.5rem;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    cursor: pointer;
+}
+.faq-widget button:focus {
+    outline: none;
+}
+.faq-widget .faq-search,
+.faq-widget .faq-categories-container,
+.faq-widget .faq-list-container {
+    display: none;
+}
+.faq-widget .faq-search input {
+    border: 1px solid #191919;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    padding: 0.5rem 1.5rem;
+    width: 100%;
+}
+.faq-widget .faq-search input:focus {
+    outline: none;
+}
+.faq-widget .faq-categories {
+    border-top: 1px solid #191919;
+    border-bottom: 1px solid #191919;
+    // padding: 15px 0;
+    padding: 1.5rem;
+    text-align: center;
+}
+.faq-widget .faq-categories li {
+    display: inline-block;
+    vertical-align: top;
+}
+.faq-widget .faq-categories li button.selected {
+    color: #fff;
+    background-color: #0093c9;
+}
+.faq-widget .faq-categories li ul li button {
+    border-color: #0093c9;
+    color: #0093c9;
+}
+.faq-widget .faq-categories li ul li button.selected {
+    border-width: 2px;
+    font-weight: bold;
+    background-color: transparent;
+    color: #0093c9;
+}
+.faq-widget .faq-list {
+	display: block;
+	text-align: center;
+    list-style: none;
+    padding: 0;
+}
+.faq-widget .faq-list .entry {
+    border: 1px solid #0093c9;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    vertical-align: top;
+    width: 100%;
+}
+.faq-widget .faq-list .entry > div {
+    height: 100%;
+}
+.faq-widget .faq-list .entry.download {
+    background-color: #f89820;
+    border: none;
+    text-align: center;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.faq-widget .faq-list .entry.download svg {
+    height: 20px;
+    width: 20px;
+    fill: #fff;
+}
+.faq-widget .faq-list .entry.download a {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    display: block;
+    height: 100%;
+    color: #fff;
+}
+.faq-widget .faq-list .entry.download a:hover,
+.faq-widget .faq-list .entry.download a:active,
+.faq-widget .faq-list .entry.download a:link {
+    text-decoration: none;
+}
+.faq-widget .faq-list .entry .control {
+    background-color: #0093c9;
+    text-align: center;
+    padding-top: 0.5rem;
+    border-radius: 7px 0 0 7px;
+}
+.faq-widget .faq-list .entry .control span {
+    color: #fff;
+    font-size: 2rem;
+    line-height: 24px;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.25s ease-in-out;
+}
+.faq-widget .faq-list .entry .question {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 200;
+    padding: 1rem 2rem;
+}
+.faq-widget .faq-list .entry .answer {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 200;
+    height: 0;
+    color: transparent;
+    overflow: hidden;
+}
+.faq-widget .faq-list .entry.selected .control span {
+    transform: rotate(45deg);
+}
+.faq-widget .faq-list .entry.selected .question {
+    font-weight: bold;
+}
+.faq-widget .faq-list .entry.selected .answer {
+    height: auto;
+    color: #191919;
+    overflow: unset;
+}
+@media (min-width: 768px) {
+    .faq-widget .faq-list.singular-category .entry {
+        display: inline-block;
+        width: 47%;
+        margin-left: 2%;
+    }
+    .faq-widget .faq-list.singular-category .entry:nth-child(odd) {
+        margin-left: 0;
+    }
+}
+
+faq,
+glossary {
+    position: relative;
+}
+faq .entry-popover,
+glossary .entry-popover {
+    position: absolute;
+    bottom: -6vh;
+    left: 2vw;
+    border: 2px solid #0093c9;
+    background-color: #fff;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 14px;
+    color: #191919;
+    padding: 10px;
+    min-width: 500px;
+    z-index: 500;
+}
+faq .entry-popover strong,
+glossary .entry-popover strong {
+    color: #191919;
+}
+faq {
+    text-decoration: underline;
+}
+glossary {
+    font-weight: bold;
+}
+.news-item a,
+.blog-item a,
+.blog a,
+.content-block a {
+    font-weight: bold;
+    color: #0093c9;
+}
+.news-item a:active,
+.news-item a:link,
+.news-item a:hover,
+.blog-item a:active,
+.blog-item a:link,
+.blog-item a:hover,
+.blog a:active,
+.blog a:link,
+.blog a:hover,
+.content-block a:active,
+.content-block a:link,
+.content-block a:hover {
+    color: #0093c9;
+}

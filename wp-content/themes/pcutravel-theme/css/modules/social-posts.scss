@@ -1,0 +1,150 @@
+.social-posts {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    max-height: 660px;
+    max-height: 66rem;
+    padding-top: 10px;
+
+    @include atSmallMedium {
+            max-height:360px;
+            max-height: 36rem;
+    }
+
+    &::-webkit-scrollbar {
+        height: 6px;
+    
+        &-thumb {
+            border-radius: 3px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+            background-color: #0093c9;
+            height: 6px;
+        }
+
+        &-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            border-radius: 10px;
+            height: 6px;
+            width: 50%;
+            margin: 0 40%;
+        }
+    }
+    
+    .row {
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+ 
+        .social-post {
+            max-height: 60rem;
+            width: 300px;
+            width: 30rem;
+            display: inline-block;
+            box-shadow: 1px 2px 15px -6px rgba(0,0,0,0.5);
+            border-radius: 25px;
+            overflow: hidden;
+            margin-right: 40px;
+            margin-right: 4rem;
+            margin-bottom: 40px;
+            margin-bottom: 4rem;
+
+            @include atSmallMedium {
+                max-height: 30rem;
+                width: 600px;
+                width: 60rem;    
+            }
+
+            .image {
+                display: inline-block;
+                width: 100%;
+            }
+
+            .image img {
+                width: 100%;
+            }
+
+            .entry {
+                vertical-align: top;
+                display: inline-block;
+                width: 300px;
+                width: 30rem;
+                font-size: 14px;
+                font-size: 1.4rem;
+                line-height: 18px;
+                line-height: 1.8rem;
+                padding: 20px;
+                padding: 2rem;
+
+                    @include atSmallMedium {
+                        width: 600px;
+                        width: 60rem;
+                    }
+                }
+
+                .entry .details .user-icon {
+                    height: 30px;
+                    height: 3rem;
+                    width: 30px;
+                    width: 3rem;
+                    border-radius: 15px;
+                    margin-right: 6px;
+                }
+
+                .entry .details a {
+                    padding-left: 10px;
+                }
+
+                .entry .content {
+                    margin-top: 20px;
+                    margin-top: 2rem;
+                    overflow-y: auto;
+                    max-height: 185px;
+                    max-height: 18.5rem;
+                    padding-right: 10px;
+                    padding-right: 1rem;
+                }
+
+                .entry .content::-webkit-scrollbar {
+                    width: 6px;
+                    height: 6px;
+                }
+
+            .entry .content::-webkit-scrollbar-thumb {
+                border-radius: 3px;
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+                background-color: #0093c9;
+                width: 6px;
+                height: 6px;
+            }
+
+            .entry .content::-webkit-scrollbar-track {
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+                border-radius: 10px;
+                width: 6px;
+                height: 6px;
+                margin-left: 10px;
+            }
+
+            &.has-image .image, 
+            &.has-image .entry {
+                width: 300px;
+                width: 30rem;
+                max-height: 300px;
+                max-height: 30rem;
+
+                @include atSmallMedium {
+                    width: 280px;
+                    width: 28rem;
+                    max-height: 280px;
+                    max-height: 28rem            
+                }
+            }            
+            &.has-image .entry {
+                margin-left: 0;
+
+                @include atSmallMedium {
+                    margin-left: 2rem
+                }
+            }
+        }
+    }
+}

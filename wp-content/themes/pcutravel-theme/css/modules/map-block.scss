@@ -1,0 +1,51 @@
+#content {
+
+    .background-map {
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+    
+
+        .content-block {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+
+            @include atSmallMedium {
+                margin-top: 4rem;
+                margin-bottom: 4rem;
+            }
+        }
+
+        a {
+            font-weight: bold;
+        }
+    }
+}
+
+.brand-icons {
+    flex-wrap: wrap;
+
+    @include atMediumLarge {
+        flex-wrap: nowrap;
+    }
+
+    .brand-icon {
+        display: inline-block;
+
+        img {
+            max-width: 250px;
+            max-height: 160px;
+        }
+        
+        &.small img {
+            max-width: 125px;
+            max-height: 80px;
+        }
+        
+        svg {
+            transform: rotateX(180deg);
+            max-width: 250px;
+            height: 160px;
+        }            
+    }
+}

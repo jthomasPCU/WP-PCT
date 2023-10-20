@@ -1,0 +1,272 @@
+.login-panel {
+    display: flex;
+    position: fixed;
+    width: 120px;
+    right: 0;
+    top: 0;
+    height: auto;
+    z-index: 9999;
+    overflow-x: hidden;
+
+    .controls {
+        flex-direction: column;
+        display: inline-block;
+        padding-left: 2rem;
+
+        // .log-toggle {
+        .toggle {
+            width: 4rem;
+            margin-left: 6rem;
+            border: none;
+            margin-top: 3.7rem;
+            background-color: #fff;
+            font-size: 1.6rem;
+            line-height: 3.5rem;
+            border-top-left-radius: 2rem;
+            border-bottom-left-radius: 2rem;
+            color: #424148;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: 300;
+            box-shadow: -2px 0 14px 0 rgb(0 0 0 / 50%);
+
+            @include atMedium {
+                width: 10rem;
+                margin-left: 0;
+                margin-top: 5.3rem;
+            }
+
+            svg {
+                margin: -0.25rem 0.3rem 0 0.5rem;
+                height: 2rem;
+                width: 2rem;
+                fill: #424148;
+            }
+
+            i {
+                margin: -0.25rem 0.3rem 0 0.5rem;
+                height: 2rem;
+                width: 2rem;
+                // fill: $mainBlack;
+                color: $mainBlack;
+            };
+
+            .close-action {
+                display: none;
+            }
+
+            span {
+                display: none;
+            }
+
+            span.open-action {
+                @include atMedium {
+                    display: inline;
+                }
+            }
+
+            span.close-action {
+                    display: none;
+            }
+
+        }
+    }
+
+    .panel {
+        flex-direction: column;
+        display: inline-block;
+        width: 350px;
+        min-width: 350px;
+        padding: 2rem 4rem;
+        background-color: #fff;
+        border-bottom-left-radius: 2rem;
+        margin-bottom: 3rem;
+        transition: box-shadow ease-in-out 0.25s;
+
+        @include atMedium {
+            width: 300px;
+            min-width: 300px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+            margin-bottom: 1.8rem;
+
+            &.heading {
+                display: none;
+
+                @include atMedium {
+                    display: block;
+                }
+            }
+
+            &.welcome {
+                color: $btnBlue;
+                font-style: italic;
+                line-height: 2.2rem;
+
+                strong {
+                    color: $mainBlack;
+                    font-size: 2.2rem;
+                    font-style: normal;
+                }
+            }
+
+            &.title {
+                color: $darkOrange;
+                text-transform: uppercase;
+            }
+        }
+
+        .logo {
+            display: block;
+            margin: 2rem auto;
+            max-height: 6rem;
+            max-width: 6rem;
+
+            @include atMedium {
+                margin: 3rem auto;
+                max-height: 10rem;
+                max-width: 10rem;
+            }
+        }
+
+        form {
+            label {
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        input[type=text], 
+        input[type=password], 
+        input[type=submit] {
+            width: 100%;
+        }
+
+        input[type=text],
+        input[type=password] {
+            border: 1px solid $mainBlack;
+            padding: 0.3rem 0.8rem;
+            font-size: 1.2rem;
+            line-height: inherit;
+        } 
+        
+        input[type=submit] {
+            color: #fff;
+            background-color: $darkOrange;
+            font-size: 1.6rem;
+            line-height: 5rem;
+            border: o;
+            border-radius: 4px;
+            text-transform: uppercase;
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+            cursor: pointer;
+        }
+        }
+        
+        .login {
+            display: none;
+        }
+
+        .register {
+            display: none;
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+
+            a, 
+            a:active, 
+            .register 
+            a:focus, 
+            a:link, 
+            a:visited {
+                color: $btnBlue;
+            }
+        }
+
+        .cancel {
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+
+            a, 
+            a:active, 
+            a:focus, 
+            a:link, 
+            a:visited {
+                // color: #191919;
+                color: $mainBlack;
+                text-decoration: none;
+            }
+
+            i {
+                width: 14px;
+                height: 14px;;
+            }
+
+            svg {
+                height: 14px;
+                width: 14px;
+            }
+        }
+
+        .forgot-password {
+            display: none;
+            color: $btnBlue;
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+        }   
+
+        #forgot-password-form {
+            display: none;
+        }
+
+        box-shadow: -2px 0 14px 0 rgb(0 0 0 / 50%);
+    }
+
+    .controls .log-toggle span.open-action {
+        display: inline;
+    }
+
+    &.open {
+        .controls {
+            .toggle {
+                margin-left: 1rem;
+
+                .open-action {
+                    display: none;
+                }
+
+                .close-action {
+                    display: inline;
+                }
+
+                @include atMedium {
+                    width: 10rem;
+                    margin-left: 0;
+                    margin-top: 5.3rem;
+                }
+            }
+            .log-toggle {
+                margin-left: 1rem;
+            }
+
+           span.open-action {
+                @include atMedium {
+                    display: none;
+                }
+            }
+
+            span.close-action {
+                display: none;
+
+                @include atMedium {
+                    display: inline;
+                }
+            }
+        }
+    }
+}

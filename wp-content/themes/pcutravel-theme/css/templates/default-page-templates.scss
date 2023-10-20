@@ -1,0 +1,20 @@
+.content-block {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    @include atSmallMedium {
+        margin-top: 6rem;
+        margin-bottom: 6rem;   
+    }
+}
+
+// Producers Page
+.brand-call-to-action {
+    padding: 4rem 0;
+
+    h2 {
+        text-transform: uppercase;
+        font-weight: 200;
+        font-size: 3.2rem;
+    }
+}

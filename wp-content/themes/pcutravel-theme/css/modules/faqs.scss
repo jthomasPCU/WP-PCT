@@ -1,0 +1,80 @@
+.entry {    
+    border: 1px solid #0093c9;
+    margin-bottom: 10px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    border-radius: 1rem;
+    vertical-align: top;
+    width: 100%;
+}
+.card {
+    background: #fff;
+    color: #333;
+    margin: 15rem auto;
+    width: 90%;
+    max-width: 1200px;
+    min-height: 30rem;
+    border-radius: 2rem;
+}
+.hero {
+    display: flex;
+    justify-content: center;
+    transform: translateY(-55%);
+    .img {
+        filter: drop-shadow(0rem 1.5rem rgba(0,0,0,0.1));
+        transition: 0.3s ease-out;
+    }
+}
+.card:hover .img {
+    filter: drop-shadow(0rem 2.5rem rgba(0,0,0,0.1));
+}
+.title {
+    font-size: 5rem;
+    padding: 1rem;
+    font-weight: 200;
+}
+.acc-container {
+    padding: 4rem 2rem;
+}
+.acc-btn {
+    width: 100%;
+    padding: 1.6rem 2rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    background: inherit;
+    border: none;
+    outline: none;
+    text-align: left;
+    transition: all 0.5s linear;
+}
+.acc-btn:before {
+    content: "\002b";
+    color: #0093c9;
+    padding: 0 3rem;
+    
+    float: left;
+    transition: all 0.3s linear;
+    font-size: 2rem;
+    line-height: 24px;
+    font-weight: bold;    
+}
+.acc-btn.is-open:before {
+    transform: rotate(45deg);
+}
+.acc-btn:hover, .acc-btn.is-open {
+    font-weight: bold;
+}
+button:focus {
+    outline: none;
+}
+.acc-content {
+    max-height: 0;
+    color: rgba(0,0,0,0.75);
+    font-size: 1.5rem;
+    margin: 0 2rem;
+    padding-left: 1rem;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    border-bottom: 1px solid #ccc;
+}

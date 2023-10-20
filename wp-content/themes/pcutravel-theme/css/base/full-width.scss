@@ -1,0 +1,133 @@
+.full-width-with-content .bgimage,
+.full-width-with-content.bgimage {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.full-width-with-content .bgimage {
+    min-height: 300px;
+}
+.full-width-with-content.box-inset {
+    box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.4), inset 0 -7px 9px -7px rgba(0, 0, 0, 0.4);
+}
+.full-width-with-content.box-inset-bottom {
+    box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.4), inset 0 -7px 9px -7px transparent;
+}
+.full-width-with-content.box-inset-top {
+    box-shadow: inset 0 7px 9px -7px transparent, inset 0 -7px 9px -7px rgba(0, 0, 0, 0.4);
+}
+.full-width-with-content.box-outset {
+    box-shadow: 0 7px 9px -7px rgba(0, 0, 0, 0.4), 0 -7px 9px -7px rgba(0, 0, 0, 0.4);
+}
+.full-width-with-content.box-outset-bottom {
+    box-shadow: 0 7px 9px -7px rgba(0, 0, 0, 0.4), 0 -7px 9px -7px transparent;
+}
+.full-width-with-content.box-outset-top {
+    box-shadow: 0 7px 9px -7px transparent, 0 -7px 9px -7px rgba(0, 0, 0, 0.4);
+}
+.full-width-with-content .col-no-padding {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.full-width-with-content .col-exta-padding {
+    padding: 25px;
+}
+.full-width-with-content .col-white-opac {
+    background: rgba(255, 255, 255, 0.5);
+    color: #191919;
+}
+.full-width-with-content .col-white-opac a {
+    color: #191919;
+}
+.full-width-with-content .col-white-opac svg {
+    fill: #191919;
+}
+.full-width-with-content .col-black-opac {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+.full-width-with-content .col-black-opac a {
+    color: #fff;
+}
+.full-width-with-content .col-black-opac svg {
+    fill: #fff;
+}
+.full-width-with-content .col-black {
+    background: #000;
+    color: #fff;
+}
+.full-width-with-content .col-black a {
+    color: #fff;
+}
+.full-width-with-content .col-black svg {
+    fill: #fff;
+}
+.full-width-with-content .col-white {
+    background: #fff;
+    color: #191919;
+}
+.full-width-with-content .col-white a {
+    color: #191919;
+}
+.full-width-with-content .col-white svg {
+    fill: #191919;
+}
+.full-width-with-content h2 svg {
+    height: 38px;
+    width: 38px;
+}
+.full-width-with-content h4 svg {
+    height: 24px;
+    width: 24px;
+}
+.full-width-with-content h4 a:hover,
+.full-width-with-content h4 a:active,
+.full-width-with-content h4 a:link {
+    text-decoration: none;
+}
+.full-width-with-content .subtitle {
+    font-weight: 200;
+}
+.full-width-with-content .subtitle.orange {
+    color: #e86956;
+}
+.full-width-with-content .subtitle.blue {
+    color: #0093c9;
+}
+.full-width-with-content .subtitle.teal {
+    color: #60d3c2;
+}
+.full-width-with-content .subtitle.red {
+    color: #e1251b;
+}
+.full-width-with-content .subtitle.green {
+    color: #70be4e;
+}
+.full-width-with-content .subtitle.purple {
+    color: #a770d7;
+}
+.full-width-with-content hr {
+    width: 150px;
+    width: 15rem;
+    height: 10px;
+    height: 1rem;
+    margin-left: 0;
+}
+.full-width-with-content hr.orange {
+    background-color: #e86956;
+}
+.full-width-with-content hr.blue {
+    background-color: #0093c9;
+}
+.full-width-with-content hr.teal {
+    background-color: #60d3c2;
+}
+.full-width-with-content hr.red {
+    background-color: #e1251b;
+}
+.full-width-with-content hr.green {
+    background-color: #70be4e;
+}
+.full-width-with-content hr.purple {
+    background-color: #a770d7;
+}

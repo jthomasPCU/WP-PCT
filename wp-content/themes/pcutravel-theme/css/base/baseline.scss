@@ -1,0 +1,165 @@
+@mixin atSmall {
+    @media (min-width: 530px) {
+      @content;
+    }
+  }
+  
+  @mixin atSmallMedium {
+    @media (min-width: 767px) {
+      @content;
+    }
+  }
+  
+  @mixin atMedium {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+
+  @mixin atMediumLarge {
+    @media (min-width: 1200px) {
+      @content;
+    }    
+  }
+
+  @mixin atLarge {
+    @media (min-width: 1400px) {
+      @content;
+    }
+  }
+
+  @mixin atExtraLarge {
+    @media (min-width: 1600px) {
+      @content;
+    }
+  }
+
+  html {
+    font-size: 56.25%;  // 1rem = 9px;
+
+    @include atSmallMedium {
+      font-size: 62.6%;  // 1rem = 10px;
+    }
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+    color: #424148;
+    overflow-x: hidden;
+    position: relative;
+
+  }
+  
+  article,aside,figcaption,figure,footer,header,hgroup,main,nav,section {
+    display: block
+  }
+
+  img, video {
+    max-width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  
+  a {
+    color: $mainBlue;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #0056b3;
+    text-decoration: none;
+  }
+
+  svg {
+    overflow: hidden;
+    vertical-align: middle;
+  }
+  
+sub,
+sup {
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
+}
+sub {
+    bottom: -0.25em;
+}
+sup {
+    top: -0.5em;
+}
+
+  // Typography
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 6rem
+}
+
+h2 {
+  font-size: 5rem
+}
+
+h3 {
+  font-size: 4rem
+}
+
+h4 {
+  // font-weight: 400 !important;
+  font-size: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+h5 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+
+  // Page producers
+    font-size: 2.9rem;
+    text-align: center;
+}
+
+h6 {
+  margin-top: 0;
+  font-weight: 700;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+h6, .h6 {
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+ul,
+ol {
+  margin: 0 0 1.65em 0;
+}
+
+li {
+  line-height: 1.65;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
